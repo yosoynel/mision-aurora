@@ -1,0 +1,130 @@
+/* style.css - estilos del proyecto Misión Aurora */
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      color: white;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      text-shadow: 0 0 20px rgba(100, 200, 255, 0.5);
+    }
+
+    .subtitle {
+      color: #a0aec0;
+      margin-bottom: 20px;
+    }
+
+    .canvas-container {
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+      border: 2px solid rgba(255, 255, 255, 0.1);
+    }
+
+    canvas {
+      display: block;
+      background: #0a0a1a;
+    }
+
+    .controls {
+      margin-top: 20px;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    button {
+      padding: 12px 24px;
+      font-size: 1rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn-start {
+      background: linear-gradient(135deg, #10b981, #059669);
+      color: white;
+    }
+
+    .btn-start:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3);
+    }
+
+    .btn-pause {
+      background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+      color: white;
+    }
+
+    .btn-pause:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(139, 92, 246, 0.3);
+    }
+
+    .btn-restart {
+      background: linear-gradient(135deg, #f59e0b, #d97706);
+      color: white;
+    }
+
+    .btn-restart:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(245, 158, 11, 0.3);
+    }
+
+    .time-display {
+      margin-top: 15px;
+      font-size: 1.1rem;
+      color: #a0aec0;
+    }
+
+    .instructions {
+      margin-top: 20px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      max-width: 800px;
+      text-align: left;
+    }
+
+    .instructions h3 {
+      margin-bottom: 10px;
+      color: #10b981;
+    }
+
+    .instructions ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .instructions li {
+      padding: 5px 0;
+      color: #cbd5e1;
+    }
+
+    .instructions li::before {
+      content: "✓ ";
+      color: #10b981;
+    }
+
+    footer {
+      margin-top: 30px;
+      color: #64748b;
+      font-size: 0.9rem;
+    }

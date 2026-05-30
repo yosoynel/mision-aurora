@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Misión Aurora - Animacion Espacial</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Misión Aurora</h1>
+  <p class="subtitle">Animación Espacial Interactiva</p>
+
+  <div class="canvas-container">
+    <canvas id="canvas" width="800" height="500"></canvas>
+  </div>
+
+  <div class="controls">
+    <button class="btn-start" id="btnStart">Iniciar Animación</button>
+    <button class="btn-pause" id="btnPause" style="display: none;">Pausar</button>
+    <button class="btn-restart" id="btnRestart" style="display: none;">Reiniciar</button>
+  </div>
+
+  <div class="time-display" id="timeDisplay">Tiempo: 0.0s / 45.8s</div>
+
+  <div class="instructions">
+    <h3>Características de la animación:</h3>
+    <ul>
+      <li>3 personajes animados con diseños únicos</li>
+      <li>Sincronización labial cuando hablan</li>
+      <li>Movimiento de brazos y cuerpo</li>
+      <li>Voces diferentes para cada personaje</li>
+      <li>Fondo espacial animado con estrellas</li>
+      <li>Escena de despegue final</li>
+    </ul>
+  </div>
+
+  <footer>
+    Hecho con Canvas API y Web Speech API | Duración: ~46 segundos
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
